@@ -30,7 +30,7 @@ type Item = {
 
 const app = express();
 const allowedOrigins = new Set<string>([
-  "https://tyfnqczy.cdpad.io",
+  "https://znm3acxj.cdpad.io",
   "http://localhost:3000"
 ]);
 app.use(
