@@ -5,30 +5,14 @@ import { posts } from "./data/posts.js";
 import { itemRecords } from "./data/items.js";
 
 const app = express();
-const allowedOrigins = new Set<string>([
-  "https://znm3acxj.cdpad.io",
-  "http://localhost:3000"
-]);
 
-app.use(
-  cors({
-    origin: (origin, callback) => {
-      if (!origin || allowedOrigins.has(origin)) {
-        callback(null, true);
-        return;
-      }
-      callback(new Error("Not allowed by CORS"));
-    },
-    methods: ["GET", "OPTIONS"],
-    allowedHeaders: ["Content-Type", "Access-Control-Request-Private-Network"]
-  })
-);
-app.use((req, res, next) => {
-  res.setHeader("Access-Control-Allow-Private-Network", "true");
-  next();
-});
+// Enable CORS for all routes
+app.use(cors({
+  origin: /https:\/\/.*\.cdpad\.io$/
+}));
 
 
+// Enable JSON body parsing for all routes
 app.use(express.json());
 
 app.get("/health", (_req, res) => {
