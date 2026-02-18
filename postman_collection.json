@@ -1,7 +1,7 @@
 {
   "info": {
     "name": "practice-api",
-    "description": "Simple API collection for users, posts, and items.",
+    "description": "Simple API collection for users, posts, items, tickets, and comments.",
     "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
   },
   "item": [
@@ -57,6 +57,61 @@
           "raw": "{{baseUrl}}/api/items/201",
           "host": ["{{baseUrl}}"],
           "path": ["api", "items", "201"]
+        }
+      }
+    },
+    {
+      "name": "Get Tickets",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "{{baseUrl}}/api/tickets",
+          "host": ["{{baseUrl}}"],
+          "path": ["api", "tickets"]
+        }
+      }
+    },
+    {
+      "name": "Get Ticket By ID",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "{{baseUrl}}/api/tickets/t1",
+          "host": ["{{baseUrl}}"],
+          "path": ["api", "tickets", "t1"]
+        }
+      }
+    },
+    {
+      "name": "Get Comments",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "{{baseUrl}}/api/comments",
+          "host": ["{{baseUrl}}"],
+          "path": ["api", "comments"]
+        }
+      }
+    },
+    {
+      "name": "Get Comment By ID",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "{{baseUrl}}/api/comments/c1",
+          "host": ["{{baseUrl}}"],
+          "path": ["api", "comments", "c1"]
+        }
+      }
+    },
+    {
+      "name": "Get Comments By Ticket ID",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "{{baseUrl}}/api/tickets/t1/comments",
+          "host": ["{{baseUrl}}"],
+          "path": ["api", "tickets", "t1", "comments"]
         }
       }
     }
