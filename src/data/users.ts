@@ -1,15 +1,3 @@
-export type User = {
-  id: number;
-  name: string;
-  username: string;
-  email: string;
-  company?: {
-    name?: string;
-    catchPhrase?: string;
-    bs?: string;
-  };
-};
-
 export const users: User[] = [
   {
     id: 1,
@@ -18,8 +6,18 @@ export const users: User[] = [
     email: "avery.knox@example.com",
     company: {
       name: "Northwind Labs",
-      catchPhrase: "Build fast, ship steady",
-      bs: "product delivery"
+      industry: "SaaS",
+      founded: 2016,
+      employees: 145,
+      annualRevenue: 18500000,
+      address: {
+        street: "240 Market Street",
+        city: "San Francisco",
+        state: "CA",
+        zip: "94105",
+        country: "USA"
+      },
+      website: "https://northwindlabs.com"
     }
   },
   {
@@ -29,8 +27,18 @@ export const users: User[] = [
     email: "jordan.lee@example.com",
     company: {
       name: "Cedar & Co",
-      catchPhrase: "Design with intent",
-      bs: "experience strategy"
+      industry: "Design Consultancy",
+      founded: 2012,
+      employees: 58,
+      annualRevenue: 7200000,
+      address: {
+        street: "89 Madison Ave",
+        city: "New York",
+        state: "NY",
+        zip: "10016",
+        country: "USA"
+      },
+      website: "https://cedarco.design"
     }
   },
   {
@@ -40,8 +48,18 @@ export const users: User[] = [
     email: "riley.patel@example.com",
     company: {
       name: "Orbit Systems",
-      catchPhrase: "Data that moves teams",
-      bs: "analytics tooling"
+      industry: "Data Analytics",
+      founded: 2018,
+      employees: 210,
+      annualRevenue: 42000000,
+      address: {
+        street: "501 Congress Ave",
+        city: "Austin",
+        state: "TX",
+        zip: "78701",
+        country: "USA"
+      },
+      website: "https://orbitsystems.io"
     }
   },
   {
@@ -51,8 +69,18 @@ export const users: User[] = [
     email: "morgan.chen@example.com",
     company: {
       name: "BluePeak Tech",
-      catchPhrase: "Scaling with confidence",
-      bs: "cloud infrastructure"
+      industry: "Cloud Infrastructure",
+      founded: 2014,
+      employees: 380,
+      annualRevenue: 96000000,
+      address: {
+        street: "1200 5th Ave",
+        city: "Seattle",
+        state: "WA",
+        zip: "98101",
+        country: "USA"
+      },
+      website: "https://bluepeaktech.com"
     }
   },
   {
@@ -62,8 +90,18 @@ export const users: User[] = [
     email: "taylor.brooks@example.com",
     company: {
       name: "Summit Works",
-      catchPhrase: "Clarity in complexity",
-      bs: "enterprise software"
+      industry: "Enterprise Software",
+      founded: 2010,
+      employees: 520,
+      annualRevenue: 155000000,
+      address: {
+        street: "300 W Adams St",
+        city: "Chicago",
+        state: "IL",
+        zip: "60606",
+        country: "USA"
+      },
+      website: "https://summitworks.com"
     }
   },
   {
@@ -72,9 +110,19 @@ export const users: User[] = [
     username: "cdiaz",
     email: "cameron.diaz@example.com",
     company: {
-      name: "Vertex Labs",
-      catchPhrase: "Innovate with purpose",
-      bs: "ai research"
+      name: "Vertex AI",
+      industry: "Artificial Intelligence",
+      founded: 2019,
+      employees: 95,
+      annualRevenue: 12500000,
+      address: {
+        street: "600 Montgomery St",
+        city: "San Francisco",
+        state: "CA",
+        zip: "94111",
+        country: "USA"
+      },
+      website: "https://vertexai.io"
     }
   },
   {
@@ -84,8 +132,18 @@ export const users: User[] = [
     email: "jamie.nguyen@example.com",
     company: {
       name: "BrightLayer",
-      catchPhrase: "Interfaces that inspire",
-      bs: "frontend systems"
+      industry: "Frontend Engineering",
+      founded: 2015,
+      employees: 72,
+      annualRevenue: 9800000,
+      address: {
+        street: "410 Townsend St",
+        city: "San Francisco",
+        state: "CA",
+        zip: "94107",
+        country: "USA"
+      },
+      website: "https://brightlayer.dev"
     }
   },
   {
@@ -95,8 +153,18 @@ export const users: User[] = [
     email: "alex.romero@example.com",
     company: {
       name: "Nimbus Security",
-      catchPhrase: "Security at scale",
-      bs: "cyber defense"
+      industry: "Cybersecurity",
+      founded: 2013,
+      employees: 640,
+      annualRevenue: 210000000,
+      address: {
+        street: "77 K St NE",
+        city: "Washington",
+        state: "DC",
+        zip: "20002",
+        country: "USA"
+      },
+      website: "https://nimbussecurity.com"
     }
   },
   {
@@ -106,8 +174,18 @@ export const users: User[] = [
     email: "casey.morgan@example.com",
     company: {
       name: "Pulse Analytics",
-      catchPhrase: "Measure what matters",
-      bs: "business intelligence"
+      industry: "Business Intelligence",
+      founded: 2017,
+      employees: 180,
+      annualRevenue: 36000000,
+      address: {
+        street: "200 Peachtree St",
+        city: "Atlanta",
+        state: "GA",
+        zip: "30303",
+        country: "USA"
+      },
+      website: "https://pulseanalytics.io"
     }
   },
   {
@@ -117,10 +195,18 @@ export const users: User[] = [
     email: "drew.thompson@example.com",
     company: {
       name: "Harbor Systems",
-      catchPhrase: "Reliable by design",
-      bs: "platform engineering"
+      industry: "Platform Engineering",
+      founded: 2011,
+      employees: 410,
+      annualRevenue: 88000000,
+      address: {
+        street: "150 King St",
+        city: "Denver",
+        state: "CO",
+        zip: "80202",
+        country: "USA"
+      },
+      website: "https://harborsystems.com"
     }
   }
 ];
-
-
