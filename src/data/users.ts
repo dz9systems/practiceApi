@@ -1,3 +1,28 @@
+export type Company = {
+  name: string;
+  industry: string;
+  founded: number;
+  employees: number;        // total employees
+  annualRevenue: number;    // in USD
+  address: {
+    street: string;
+    city: string;
+    state: string;
+    zip: string;
+    country: string;
+  };
+  website: string;
+};
+
+export type User = {
+  id: number;
+  name: string;
+  username: string;
+  email: string;
+  company: Company;
+};
+
+
 export const users: User[] = [
   {
     id: 1,
