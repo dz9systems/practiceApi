@@ -1,4 +1,10 @@
-import { Comment } from "../types";
+export type Comment = {
+  id: string;
+  ticketId: string;
+  author: string;
+  body: string;
+  createdAt: string; // ISO date string
+};
 
 export const comments: Comment[] = [
   {

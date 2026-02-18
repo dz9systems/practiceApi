@@ -1,4 +1,15 @@
-import { Ticket } from "../types";
+export type TicketStatus = "open" | "in_progress" | "done";
+export type TicketPriority = "low" | "medium" | "high" | "urgent";
+
+export type Ticket = {
+  id: string;
+  title: string;
+  status: TicketStatus;
+  priority: TicketPriority;
+  assignee: string | null;
+  createdAt: string; // ISO date string
+  description: string;
+};
 
 export const tickets: Ticket[] = [
   {
